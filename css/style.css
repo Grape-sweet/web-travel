@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: scroll;/*强制显示滚动条 解决点击导航栏切换到页面高度不足一屏时出现的导航栏偏移*/
+}
+html,body{
+    height: 100%;
+}
+body{
+    background:rgba(208, 246, 248, 0.521);
+}
+.bd{
+    border:1px solid black;
+    min-height: 200px;
+}
+.bd2{
+    border:1px solid red;
+    min-height: 200px;
+}
+.np{
+    padding: 0 !important; 
+}
+ul li{
+    list-style: none;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    color:black;
+}
+.fixed-bottom {position: fixed;bottom: 0;}
+#gotoTop{
+    width: 60px;
+    height: 60px;
+    position:fixed;
+    /* bottom:250px; */
+    top:70%;
+    right:1%;
+    opacity: .8;
+    cursor: pointer;
+    display: none;
+    background: url("../images/go.png") no-repeat;
+
+}
